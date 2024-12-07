@@ -30,7 +30,7 @@ col1, col2 = st.columns(2)
 with col1:
     batting_team = st.selectbox('Select the batting team', sorted(teams))
 with col2:
-    bowling_team = st.selectbox('Select the bowling team', sorted(teams))
+    bowling_team = st.selectbox('Select the bowling team', [team for team in sorted(teams) if team != batting_team])
 target = st.number_input('Target',step=1)
 col3, col4, col5 =st.columns(3)
 with col3:
