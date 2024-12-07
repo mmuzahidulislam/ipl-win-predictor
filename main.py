@@ -21,7 +21,7 @@ cities = ['Hyderabad', 'Rajkot', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata',
        'Bengaluru']
 
 pipe = pickle.load(open('artifacts/pipe.pkl', 'rb'))
-st.title('Tata IPL-2024 Win Predictor')
+st.title('Tata IPL Win Predictor')
 
 
 
